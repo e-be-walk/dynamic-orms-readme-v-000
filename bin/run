@@ -13,5 +13,6 @@ song.each do |song|
 puts "song name: " + song.name
 puts "song album: " + song.album
 song.save
+end
 
 DB[:conn].execute("SELECT * FROM songs")
